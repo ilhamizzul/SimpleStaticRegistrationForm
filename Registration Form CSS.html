@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Form CSS Registration </title>
+		<link href="style_form.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body style="background-image:url(droplet_surface_background_form_65568_1920x1080.jpg);">
+	
+	<script type="text/javascript">
+		function aw(){
+		var nama = document.getElementById("nama").value;
+		var nama_belakang = document.getElementById("nama_belakang").value;
+		var kelas = document.getElementById("kelas").value;
+		var lahir = document.getElementById("tanggal_lahir").value;
+		var kelamin = document.getElementsByName("Gender").value;
+		var hobi = document.getElementById("hobby").value;
+		var alamat = document.getElementById("alamat").value;
+		var angkatan = document.getElementById("angkatan").value;
+		
+		alert("halo, nama saya " + nama + " " + nama_belakang + ", saya duduk di bangku " 
+		+ kelas + ". Saya lahir pada " + lahir + ". Saya " + kelamin + " dan hobi saya  adalah " + hobi +
+		 ". Alamat saya di jalan" + alamat + ". Saya di SMK telkom berada di angkatan " + angkatan + ". terima kasih.");
+
+		} 
+	</script>
+		
+		<form action="" method="">
+		
+			<ul>
+			<li><h1> <u>Registration Form</u> </h1></li>
+				<li>
+					<label for="nama">Nama Depan:</label>
+					<input class="input" type="text" name="nama_depan" id="nama" placeholder="masukkan nama depan">
+				</li>
+				<li>
+					<label for="nama_belakang">Nama Belakang:</label>
+					<input class="input" type="text" name="nama_belakang" id="nama_belakang" placeholder="masukkan nama belakang">
+				</li>
+				<li>
+					<label for="kelas"> Kelas: </label>
+					<input class="input" type="text" name="kelas" id="kelas" placeholder="kelas">
+				</li>
+				<li>
+					<label for="password">Password:</label>
+					<input class="input" type="password" name="password" id="password" placeholder="masukkan password">
+					<span class="hint"> Minimal 8 karakter </span>
+				</li>
+				<li>
+					<label for="email">Email: </label>
+					<input class="input" type="email" name="email" id="email">
+					<span class="hint"> misal: lalalalala@maddog.com </span>
+				</li>
+				<li>
+					<label for="tanggal_lahir">Tanggal lahir:</label>
+					<input class="input" type="date" name="tanggal_lahir" id="tanggal_lahir">
+				</li>
+				<li>
+					<label>Gender:</label>
+					<input type="radio" name="Gender" value="Laki-laki" id="gender"> Laki-laki
+					<input type="radio" name="Gender" value="Perempuan" id="gender"> Perempuan
+					<input type="radio" name="Gender" value="why not both?" id="gender"> Why not both?
+				</li>
+				<li>
+					<label>Hobby:</label>
+					<input type="checkbox" name="hobby" value="basket" id="hobby"> Basket
+					<input type="checkbox" name="hobby" value="badminton" id="hobby"> Badminton
+					<input type="checkbox" name="hobby" value="tidur" id="hobby"> Tidur
+				</li>
+				<li>
+					<label for="alamat">Alamat: </label>
+					<textarea class="input" id="alamat" name="alamat" rows="5" cols="20"> </textarea>
+				</li>
+				<li>
+					<label for="angkatan"> Angkatan: </label>
+					<select id="angkatan" name="mydropdown">
+							<option value="1"> 1 </option>
+							<option value="2"> 2 </option>
+							<option value="3"> 3 </option>
+							<option value="4"> 4 </option>
+							<option value="5"> 5 </option>	
+							<option value="6"> 6 </option>	
+							<option value="7"> 7 </option>	
+							<option value="8"> 8 </option>	
+							<option value="9"> 9 </option>	
+							<option value="10"> 10 </option>	
+							<option value="11"> 11 </option>
+							<option value="12"> 12 </option>
+							<option value="13"> 13 </option>
+							<option value="14"> 14 </option>
+							<option value="15"> 15 </option>
+							<option value="16"> 16 </option>
+							<option value="17"> 17 </option>
+							<option value="18"> 18 </option>
+							<option value="19"> 19 </option>
+							<option value="20"> 20 </option>
+							<option value="21"> 21 </option>
+							<option value="22"> 22 </option>
+							<option value="23"> 23 </option>
+							<option value="24"> 24 </option>
+							<option value="25"> 25 </option>
+							<option value="26"> 26 </option>
+							<option value="27"> 27 </option>
+							<option value="28"> 28 </option>
+							<option value="29"> 29 </option>							
+					</select>
+				</li>
+				<li>
+					<button type="submit" value="Submit" onclick="aw()"> submit </button>
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
+<!-- border-bottom/top-left/right-radius = buat memberi lengkungan pada border -->
+<!-- transition = untuk memberi jeda pada animasi. satuannya .50s -->
+<!-- require= digunakan untuk notifikasi untuk memasukkan formulir terlebih dahulu dengan benar -->
